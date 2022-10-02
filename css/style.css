@@ -1,32 +1,26 @@
 body {
 	background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
 	background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
-	padding: 2vmax;
+	padding: 3vmax;
 }
 
 #area1,
 #area2,
+header,
 footer {
-	font-size: 4vmax;
+	font-size: 3vmax;
+	color: white;
+}
+#area2 {
+	text-align: center;
+	clear: both;
 }
 
-#area3 {
-	grid-column: 1/4;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 8px 8px;
+#area2 input,#area1 input[type='number'] {
+	width: 7vw;
+	font-size: 3vmax;
 }
 
-button {
-	border-radius: 2vmax;
-	font-size: 5vmax;
-}
-
-#ca {
-
-	position: relative;
-
-}
 
 input[type='radio'] {
 	width: 2vmax;
@@ -60,28 +54,25 @@ input[type='radio']:checked+label {
 	color: #34ff11;
 }
 
-.W {
-	background-color: white;
-	color: black;
+#area3 {
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 8px 8px;
 }
 
-.B {
-	background-color: black;
-	color: white;
-}
-
-#area3 button {
-	min-height: 10vh;
+#area3 button,
+#area4 button {
+	border-radius: 2.5vmax;
+	font-size: 5vmax;
+		min-height: 10vh;
 }
 
 #area4 button {
-
-
 	display: inline-block;
 	width: 40%;
-	min-height: 10vh;
-}
 
+}
 #area4 {
 	backdrop-filter: blur(3px);
 	text-align: center;
@@ -92,11 +83,13 @@ input[type='radio']:checked+label {
 	width: 100%;
 	box-shadow: 0 -8px 10px black;
 }
-
-#area2 {
-	text-align: center;
+.W {
+	background-color: white;
+	color: black;
+}
+.B {
+	background-color: black;
+	color: white;
 }
 
-#area2 input {
-	width: 10vw;
-}
+
