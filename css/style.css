@@ -1,9 +1,13 @@
-* {
-	border-style: solid;
+body {
+	background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
+	background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
+	padding: 2vmax;
 }
 
-body {
-	background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+#area1,
+#area2,
+footer {
+	font-size: 4vmax;
 }
 
 #area3 {
@@ -14,8 +18,46 @@ body {
 }
 
 button {
-	border-radius: 3vmax;
-	font-size: 7vmin;
+	border-radius: 2vmax;
+	font-size: 5vmax;
+}
+
+#ca {
+
+	position: relative;
+
+}
+
+input[type='radio'] {
+	width: 2vmax;
+	height: 2vmax;
+	appearance: none;
+	position: relative;
+}
+
+input[type='radio']:before {
+	content: '';
+	width: 2vmax;
+	height: 2vmax;
+	border: 0.5vmin solid #010dff;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+input[type='radio']:checked:before {
+	content: '';
+	width: 2vmax;
+	height: 2vmax;
+	border: 0.5vmin solid #010dff;
+	background: #34ff11;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+input[type='radio']:checked+label {
+	color: #34ff11;
 }
 
 .W {
@@ -33,20 +75,22 @@ button {
 }
 
 #area4 button {
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
+
+
 	display: inline-block;
 	width: 40%;
 	min-height: 10vh;
 }
 
 #area4 {
-	background-color: black;
+backdrop-filter: blur(3px);
 	text-align: center;
+	padding: 2vmax;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	box-shadow: 0 -8px 10px black ;
 }
 
 #area2 {
