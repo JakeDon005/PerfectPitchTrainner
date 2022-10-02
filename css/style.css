@@ -83,14 +83,14 @@ input[type='radio']:checked+label {
 }
 
 #area4 {
-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
 	text-align: center;
 	padding: 2vmax;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	box-shadow: 0 -8px 10px black ;
+	box-shadow: 0 -8px 10px black;
 }
 
 #area2 {
