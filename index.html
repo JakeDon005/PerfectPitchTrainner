@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	</head>
+	<body>
+		<header style="  text-align: center;font-size: 7vmin;">
+			Perfect Pitch Trainer
+		</header>
+
+		<div id="area1">
+
+			free:<input id="free" type='radio' name="mode" value="free" />
+			train:<input id="train" type='radio' name="mode" value="train" />
+			和弦数量：<input id="chords" type="number" name="chordsrange" style="width:10vw" />
+		</div>
+		<div id="area2">
+			音域(1~7)
+			<input id="Arange1" type="number" name="firstname" />~<input id="Arange2" type="number" name="firstname" />
+			<button id="refresh">刷新</button>
+		</div>
+		<div id="area3">
+
+		</div>
+		<footer style="  text-align: center;">
+			&copy;Made by:Jake-Don
+		</footer>
+		<div style="height:10vh"></div>
+		<div id="area4">
+			<button id="start">start</button>
+			<button id="again">again</button>
+		</div>
+
+		<script src="js/audio.js"></script>
+	</body>
+
+</html>

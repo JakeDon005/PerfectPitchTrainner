@@ -1,0 +1,58 @@
+* {
+	border-style: solid;
+}
+
+body {
+	background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+}
+
+#area3 {
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 8px 8px;
+}
+
+button {
+	border-radius: 3vmax;
+	font-size: 7vmin;
+}
+
+.W {
+	background-color: white;
+	color: black;
+}
+
+.B {
+	background-color: black;
+	color: white;
+}
+
+#area3 button {
+	min-height: 10vh;
+}
+
+#area4 button {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	display: inline-block;
+	width: 40%;
+	min-height: 10vh;
+}
+
+#area4 {
+	background-color: black;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+#area2 {
+	text-align: center;
+}
+
+#area2 input {
+	width: 10vw;
+}
