@@ -23,7 +23,9 @@ footer {
 	font-size: 5vw;
 }
 
-
+input[type=number]{
+	border-radius: 2vw;
+}
 input[type='radio'] {
 	width: 4vw;
 	height: 4vw;
