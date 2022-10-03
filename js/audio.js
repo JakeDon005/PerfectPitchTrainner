@@ -10,6 +10,9 @@ let range = [4, 5];
 let rnote = [];
 let pnotes = [];
 let ifst = null
+let gainnd = ctx.createGain();
+gainnd.gain.setValueAtTime(0.5, ctx.currentTime)
+gainnd.connect(ctx.destination)
 
 function frjs(n) {
 	return 440 * Math.pow(2, (n - 46) / 12)
@@ -29,7 +32,7 @@ P.prototype = {
 		this.os = ctx.createOscillator();
 		this.os.frequency.value = this.fr;
 		this.os.type = osty[getRndInteger(0, osty.length)];
-		this.os.connect(ctx.destination)
+		this.os.connect(gainnd)
 		//随机波
 		/*
 		this.frameCount = ctx.sampleRate /this.fr;
@@ -210,9 +213,7 @@ $('#train').on('click', function() {
 	v.disabled = false
 	mode = 2
 })
-document.body.addEventListener('touchmove', function(event) {
-	event.preventDefault();
-}, false);
+
 document.body.onselectstart = function() {
 	return false;
 }
